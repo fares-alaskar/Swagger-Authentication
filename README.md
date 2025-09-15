@@ -23,7 +23,7 @@ Clone the repository or add the source files to your project:
 git clone https://github.com/yourusername/swagger-auth-middleware.git
 ```
 
-- Usage
+# Usage
 
 In your Program.cs (ASP.NET Core 6/7/8/9):
 
@@ -42,8 +42,9 @@ app.UseAuthorization();
 app.MapControllers();
 app.Run();
 
+---
 
-Configuration
+# Configuration
 
 Default settings in the middleware:
 
@@ -54,23 +55,19 @@ Password: admin
 
 You can modify these directly in SwaggerAuthentication.cs or extend the middleware to read from configuration.
 
-
-Contributing
+---
+# Contributing
 
 Contributions are welcome! Feel free to submit pull requests or open issues for improvements or bug fixes.
-
-Example
+---
+# Example
 
 When accessing /swagger in the browser:
-
 Browser prompts for username and password.
-
 Enter the credentials defined in the middleware.
-
 If correct, Swagger UI loads.
-
 If wrong credentials are entered multiple times, the IP is temporarily blocked.
-
-Notes
-
+---
+# Notes
 Middleware only protects Swagger UI routes (/swagger and /swagger/v1/swagger.json).
+---
