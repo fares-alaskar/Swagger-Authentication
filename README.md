@@ -20,7 +20,7 @@ This allows you to restrict access to your Swagger documentation in development 
 Clone the repository or add the source files to your project:
 
 ```bash
-git clone https://github.com/yourusername/swagger-auth-middleware.git
+git clone https://github.com/github.com/fares-alaskar/Swagger-Authentication.git
 ```
 
 ---
