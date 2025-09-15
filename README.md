@@ -28,7 +28,7 @@ git clone https://github.com/github.com/fares-alaskar/Swagger-Authentication.git
 ## Usage
 
 In your Program.cs (ASP.NET Core 6/7/8/9):
-
+```
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
@@ -43,7 +43,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
-
+```
 ---
 
 ## Configuration
