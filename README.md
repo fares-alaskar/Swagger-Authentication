@@ -32,12 +32,12 @@ In your Program.cs (ASP.NET Core 6/7/8/9):
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-// Add Swagger first
-app.UseSwagger();
-app.UseSwaggerUI();
-
 // Use Swagger Authentication middleware
 app.UseSwaggerAuthentication();
+
+// Add Swagger then
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseAuthentication();
 app.UseAuthorization();
